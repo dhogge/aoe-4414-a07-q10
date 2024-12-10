@@ -71,7 +71,7 @@ else:
 
 # write script below this line
 
-isc_a = calc_solar_current(irradiance, sa_m2, eff, voc)
+isc_a = calc_solar_current(irrw_m2, sa_m2, eff, voc)
 i1_a = isc_a
 qt_c = q0_c
 p_mode_w = p_on_w
