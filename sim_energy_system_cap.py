@@ -87,7 +87,9 @@ if voc <= node_v and i1_a != 0.0:
     i1_a = 0.0
 if node_v < v_thresh:
     p_mode_w = 0.0
-    
+
+log = [[t_s, node_v]]
+
 while log[-1][0] < dur_s:
     i3_a = p_mode_w/node_v
     qt_c += (i1_a-i3_a)*dt_s
